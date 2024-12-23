@@ -1,0 +1,16 @@
+#blanco{
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+}
+#rojo{
+    background-color: rgb(237, 41, 57);
+    display: inline-block;
+}
+#azul{
+    background-color: rgb(0, 38, 84);
+    display: inline-block;
+}
+.tamaño{
+    height: 900px;
+    width: 500px;
+}

@@ -1,0 +1,29 @@
+
+#tarjeta input-group {
+    margin-bottom: 15px;
+}
+#tarjeta input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+#tarjeta input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+#tarjeta button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#tarjeta button:hover {
+    background-color: #45a049;
+}

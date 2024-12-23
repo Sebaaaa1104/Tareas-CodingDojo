@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border: 15px solid black;
+    width: 560px;
+    height: 560px;
+    box-sizing: border-box;
+}
+
+/* Columna izquierda */
+.columna-izquierda {
+    display: flex;
+    flex-direction: column;
+    border-right: 15px solid black;
+    flex: 1;
+}
+
+/* Bloque rojo */
+.red {
+    background-color: red;
+    flex: 2;
+    border-bottom: 15px solid black;
+}
+
+/* Fila inferior */
+.fila-inferior {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 33.3%;
+}
+
+/* Clases para las cajas */
+.box {
+    box-sizing: border-box;
+    border: 5px solid black;
+}
+
+/* Amarillo */
+.yellow {
+    background-color: yellow;
+    flex: 1;
+    height: 67%;
+}
+
+/* Azul */
+.blue {
+    background-color: blue;
+    flex: 1;
+}
+
+/* Blanco pequeño */
+.white.small {
+    background-color: white;
+    flex: 1;
+}
+
+/* Blanco grande */
+.white.large {
+    background-color: white;
+    flex: 2;
+}

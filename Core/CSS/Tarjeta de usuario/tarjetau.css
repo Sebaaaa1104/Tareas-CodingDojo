@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+.todo {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    background-color: #f9f9f9;
+}
+
+.pagina {
+    display: flex;
+    flex-direction: row;
+}
+
+.tarjeta-usuario-contenedor {
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.rectangulo-azul {
+    background-color: #00bbd3;
+    height: 100px;
+}
+
+.contenido_usuario {
+    position: relative;
+    padding: 20px;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    position: absolute;
+    top: -60px;
+    background-color: #fff;
+}
+
+.info_usuario {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info_usuario h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.ubicacion {
+    color: #777;
+    font-size: 16px;
+}
+
+.profesion {
+    color: #555;
+    margin: 5px 0 15px 0;
+    font-size: 14px;
+}
+
+.descripcion {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.button {
+    padding: 8px 20px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    height: 35px;
+}
+
+.button:hover {
+    background-color: #e0e0e0;
+}

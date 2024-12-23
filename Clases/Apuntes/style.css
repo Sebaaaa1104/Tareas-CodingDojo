@@ -1,0 +1,148 @@
+/* CSS: Cascade Style Sheets
+Estilizar el HTML que tengamos
+*/
+/*
+SELECTORES
+etiqueta {
+    propiedad: valor;
+}
+
+.clase {
+    propiedad: valor;
+}
+
+#id {
+    propiedad: valor;
+}
+
+*/
+/*CSS RESET*/
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+
+h2 {
+    color: purple;
+    font-size: 40px;
+}
+
+.rojo {
+    color: red;
+}
+
+.subrayado { /*camelCase  sub_rayado */
+    text-decoration: underline;
+}
+
+#parrafo_especial {
+    border: 2px solid blue; /*Linea solida/recta*/
+}
+
+.formulario {
+    border: 1px dotted black;
+    border-radius: 4px;
+}
+
+#encabezado3 {
+    color: green;
+}
+
+.color_amarillo {
+    color: yellow;
+}
+
+/*JERARQUIA: ID, CLASES, ETIQUETA*/
+
+p strong { /*Etiqueta strong dentro de p*/
+    text-transform: uppercase;
+    color: brown;
+}
+/*
+.rojo strong
+#parrafo_especial .rojo
+.formulario #encabezado3
+*/
+
+div > a { /*Aplica solo para descendiente directo*/
+    text-decoration: line-through;
+}
+
+input[type="number"] {
+    width: 350px;
+}
+
+input[type="text"] {
+    height: 100px;
+}
+
+textarea, input {
+    border: 3px solid magenta;
+}
+
+/*COLORES*/
+.colores {
+    /* color: magenta; */
+    /* color: rgb(111, 192, 243); */
+    color: #02abe4; /*Color de letra*/
+    background-color: green; /*Color de Fondo*/
+}
+
+/*TEXTO*/
+#texto {
+    text-align: left; /*left, center, right, justify*/
+    text-decoration: underline; /*none, underline, line-through, overline */
+    font-style: italic; /*italic, normal*/
+    font-weight: bold; /*normal, light, 100, 300, 900*/
+    font-size: 20px; /*tamaño de letra, pt em*/
+    font-family: sans-serif; /*serif, monospace, cursive*/
+}
+
+/*TAMAÑO*/
+.tamano {
+    width: 400px; /*ANCHO*/
+    height: 50px; /*ALTO*/
+    background-color: darkblue;
+}
+
+/*BACKGROUND*/
+.background {
+    width: 400px;
+    height: 600px;
+    border: 1px solid black;
+
+    background-color: aqua;
+    background-image: url(../img/gatito_small.jpg);
+    background-repeat: no-repeat; /*no-repeat, repeat-x, repeat-y, repeat*/
+    background-size: cover; /*cover: estirar verticalmente, contain: estirar horizontal*/
+
+    background: url(../img/gatito_small.jpg) no-repeat;
+}
+
+/*MODELO DE CAJA - BOX MODEL*/
+.caja {
+    background-color: lightblue;
+    width: 100px; 
+    height: 100px;
+    /*Margin: el espacio entre mi elemento y el resto de la página*/
+    margin: 20px;
+    margin-top: 40px; /*-top, -right, -bottom, -left*/
+    margin: 100px 15px; /*ArribaAbajo IzqDer*/
+    margin: 50px 10px 100px 200px; /*Arriba Der Abajo Izq*/
+
+    /*Padding: margen interno, espacio entre donde comienza mi elemento y lo que hay dentro*/
+    padding: 20px;
+    padding-left: 50px; /*-top, -right, -bottom, -left*/
+    padding: 10px 100px; /*ArribaAbajo IzqDer*/
+    padding: 10px 30px 50px 100px; /*Arriba Der Abajo Izq*/
+
+    border: black 3px solid; /*solid dotted dashed double*/
+}
+
+header {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}

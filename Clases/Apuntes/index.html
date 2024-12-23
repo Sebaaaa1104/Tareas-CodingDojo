@@ -1,0 +1,176 @@
+<!DOCTYPE html> <!-- HTML 5 -->
+<html lang="es"> <!-- Documento html, lang = idioma -->
+<head>
+    <meta charset="UTF-8"> <!-- Acentos, tildes, ñ, caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Escala 1:1 -->
+    <title>Intro a HTML</title> <!-- Título / Visualiza en la pestaña navegador -->
+    <link rel="stylesheet" href="style.css"> <!-- Enlace con CSS -->
+</head>
+<body> <!-- Contenido del sitio web, visualizar el usuario  -->
+    
+    <!-- Encabezados/Headings/Título -->
+    <h1>Título Principal</h1> <!-- Título más importante -->
+    <h2>Encabezado 2</h2>
+    <h3 id="encabezado3" class="rojo">Encabezado 3</h3>
+    <h4>Encabezado 4</h4>
+    <h5>Encabezado 5</h5>
+    <h6>Encabezado 6</h6>
+
+    <p class="rojo subrayado color_amarillo">
+        Aquí se encuentra nuestro <br> primer párrafo.
+    </p>
+    <p id="parrafo_especial">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, hic. Nihil dolorem officia aperiam ratione dolores, suscipit est inventore voluptatem omnis enim recusandae molestias ipsum in autem aspernatur facere illo!
+    </p>
+    <p>
+        <strong>Negritas un texto</strong> <em>Itálicas mi texto</em> <b>Negritas mi texto</b> <u>Subrayado mi texto</u>
+    </p>
+    <strong>Este es otro strong</strong>
+    <p>
+        <strong>A este también aplica</strong>
+    </p>
+
+    <div>
+        <a href="#">Este es un enlace 1</a>
+        <p>
+            <a href="#">Este es un enlace 2</a>
+        </p>
+        
+    </div>
+
+    <div>
+        <a href="#">Este es un enlace 1</a>
+        <p>
+            <a href="#">Este es un enlace 2</a>
+        </p>
+        
+    </div>
+
+    <h2>Lista desordenada - Compras</h2>
+    <!-- Unordered List -->
+    <ul>
+        <li>Pan</li> <!-- list item -->
+        <li>Leche</li>
+        <li>Café</li>
+        <li>Palta</li>
+        <li>Queso</li>
+        <li>Jamón</li>
+    </ul>
+
+    <h2>Lista Ordenada - Canciones preferidas</h2>
+    <!-- Ordered List -->
+    <ol start="9" >
+        <li>El mañana</li>
+        <li>Wish you where here</li>
+        <li>Angel of salvation</li>
+    </ol>
+    
+    <!-- TABLA -->
+    <table>
+        <!-- Table header -->
+        <thead>
+            <!-- Table row - Fila de Tabla -->
+            <tr>
+                <th>Nombre</th> <!-- Table heading - Titulo de tabla -->
+                <th>Apellido</th>
+                <th>E-mail</th>
+            </tr>
+        </thead>
+        <!-- Table body - Cuerpo tabla -->
+        <tbody>
+            <tr>
+                <!-- Table data -->
+                <td>Juana</td>
+                <td>De Arco</td>
+                <td>juana@codingdojo.la</td>
+            </tr>
+            <tr>
+                <td>Elena</td>
+                <td>De Troya</td>
+                <td>elena@codingdojo.la</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>Páramo</td>
+                <td>pedro@codingdojo.la</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <img src="img/gatito.jpg" alt="Imagen de Gatito" width="100" >
+    <img src="https://codingdojolatam.la/wp-content/uploads/2023/11/logo-azul-trans.png" alt="Logo Coding Dojo">
+
+    <p>
+        <a href="https://google.com" target="_blank" >Haz click aquí</a>
+    </p>
+
+    <a href="https://codingdojolatam.la" target="_blank">
+        <img src="https://codingdojolatam.la/wp-content/uploads/2023/11/logo-azul-trans.png" alt="Logo Coding Dojo">
+    </a>
+    
+    <div> <!-- Divisor, Bloque -->
+
+    </div>
+    
+    <!-- FORMULARIO -->
+    <form action="#" method="post" class="formulario" > <!-- action=A donde enviaré la info, method= el método que se utilizara -->
+        <div>
+            <label for="identificador_nombre">Nombre:</label> <!-- "etiqueta"/referencia al campo input -->
+            <input type="text" name="input_texto" id="identificador_nombre" ><!-- Campo para ingresar info-->
+        </div>
+        <div>
+            <label>Edad</label>
+            <input type="number" name="input_numeral" placeholder="Ingresa tu edad" >
+            <input type="password" name="contasena" >
+            <input type="date" name="input_fecha">
+            <input type="email" name="input_correo" > <!-- Hasta enviar formulario revisa que sea correcto -->
+        </div>
+        <div>
+            <label>Estado Civil:</label><br>
+            <input type="radio" name="estado_civil" value="casado" id="casado_id"  >
+            <label for="casado_id" >Casado</label> <!-- for="identificador del input" --> <br> <!-- Salto de línea -->
+            <input type="radio" name="estado_civil" value="soltero" id="soltero_id" >
+            <label for="soltero_id">Soltero</label>
+        </div>
+        <div>
+            <label>¿Cuál es tu lenguaje de programación favorito?</label>
+            <select name="lenguaje">
+                <option value="1">Python</option>
+                <option value="5">Java</option>
+                <option value="8">C#</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" name="terminos_condiciones" id="terminos_condiciones" >
+            <label for="terminos_condiciones">Acepto términos y condiciones</label>
+        </div>
+        <div>
+            <textarea name="comentario" cols="40" rows="10" maxlength="10" ></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar Información" > <!-- botón que envía el formulario -->
+        </div>
+    </form>
+    <p class="colores">
+        Reglas de Colores
+    </p>
+    <p id="texto">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo fuga odit alias laboriosam minus incidunt tempora voluptates aut, eos eaque nihil saepe non, ullam commodi impedit suscipit fugiat, facilis mollitia iure facere. Numquam quia culpa optio iusto est veniam inventore nostrum ratione reiciendis iure sunt, excepturi saepe voluptatibus deserunt obcaecati ipsum neque odit aliquid velit eveniet impedit qui. Dolorum pariatur cum nobis, in, maiores unde dolorem nihil a velit doloremque quod? Facere modi voluptatum doloribus, quidem, sequi culpa amet dolores eaque, laudantium iure porro impedit nulla ab at atque praesentium voluptatibus laboriosam a ducimus officiis magni sint ipsum. Laudantium, sunt.
+    </p>
+    <div class="tamano"></div>
+    <div class="background"></div>
+    <div class="caja">
+        Caja
+    </div>
+
+    <!-- Etiquetas Semánticas: Descriptivas -->
+    <header></header> <!-- Encabezado -->
+    <nav></nav> <!-- Menu de navegación -->
+    <section></section> <!-- Sección de mi sitio -->
+    <main></main> <!-- Sección Principal -->
+    <footer></footer> <!-- Pie de Página -->
+    
+
+
+</body>
+</html>

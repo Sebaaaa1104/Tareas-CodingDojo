@@ -1,0 +1,78 @@
+.container {
+    width: 1000px;
+    background-color: #eaeaea;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
+.titulo {
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+}
+
+.bloques {
+    height: 200px;
+    width: 970px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px 15px;
+}
+
+#bloque_1 {
+    background-color: khaki;
+}
+
+#bloque_2 {
+    background-color: lightskyblue;
+}
+
+#bloque_3 {
+    background-color: lightcoral;
+}
+
+.imgn {
+    width: 160px;
+    height: 160px;
+    margin: 20px;
+    background-size: cover;
+}
+
+#img1 {
+    background-image: url(img/privateinvestocat.jpg);
+}
+
+#img2 {
+    background-image: url(img/grinchtocat.gif);
+}
+
+#img3 {
+    background-image: url(img/Fintechtocat.png);
+}
+
+#img4 {
+    background-image: url(img/justicetocat.jpg);
+}
+
+#img5 {
+    background-image: url(img/luchadortocat.png);
+}
+
+#img6 {
+    background-image: url(img/vinyltocat.png);
+}
+
+#img7 {
+    background-image: url(img/dinotocat.png);
+}
+
+#img8 {
+    background-image: url(img/universetocat.png);
+}
+
+.pd {
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    font-size: larger;
+}
