@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: gray;
+    font-weight: bold;
+    width: 90%;
+    height: 80px;
+}
+
+.izquierda {
+    width: 65%;
+}
+
+.derecha {
+    width: 35%;
+}
+
+.pagina {
+    margin-top: 10px;
+    width: 90%;
+    height: 1000px;
+    border: 5px black;
+    display: flex;
+}
+
+.bloque{
+    margin: 10px;
+    border: 2px black solid;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 15px;
+    font-size: 80%;
+}
+
+.tbloque {
+    font-size: 170%;
+}
+
+#buscador {
+    width: 60%;
+    height: 40%;
+}
+
+#sesion {
+    width: 7%;
+    height: 50%;
+    border: 1px black solid;
+    background-color: royalblue;
+    color: white;
+    box-shadow: 2px 2px 5px black;
+}
+
+.sustantivo {
+    font-style: italic;
+}
+
+#mg1, #mg2 {
+    width: 10%;
+    height: 22px;
+    background-color: lemonchiffon;
+    border: 1px black solid;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+}
+
+#supertext {
+    font-size: 120%;
+}
+
+#botdef {
+    width: 60%;
+    height: 30px;
+    border: 1px black solid;
+    background-color: green;
+    color: white;
+    box-shadow: 2px 2px 5px black;
+}
