@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1500px;
+}
+
+.barra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    font-weight: bold;
+    width: 90%;
+    height: 80px;
+}
+
+.izquierda {
+    width: 20%;
+    margin: 100px 20px 0px 20px;
+}
+
+.derecha {
+    width: 80%;
+    margin: 10px;
+}
+
+.pagina {
+    margin-top: 10px;
+    width: 90%;
+    display: flex;
+}
+
+#perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: large;
+    border: 2px black solid;
+    border-radius: 5px;
+    margin-top: -45px;
+}
+
+.fotoperfil {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-size: cover;
+    background-image: url(mapacheperfil.png);
+}
+
+#nperfil {
+    margin-bottom: 10px;
+}
+
+#tittle {
+    margin-left: 10px;
+}
+
+.bloque{
+    margin: 10px;
+    border: 2px black solid;
+    display: flex;
+    padding: 10px 15px;
+    font-size: 80%;
+    border-radius: 5px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 20px;
+    margin: 15px 0px;
+}
+
+.info h1 {
+    font-size: 180%;
+}
+
+.info p {
+    font-size: 110%;
+}
+
+.megusta {
+    width: 20%;
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    margin: 5px 10px;
+    align-items: top;
+}
+
+.megusta p {
+    margin: 8px 0px;
+}
+
+#blike1, #blike2, #blike3 {
+    width: 60px;
+    height: 40%;
+    border: 0px;
+    background-color: gold;
+    border-radius: 3px;
+}

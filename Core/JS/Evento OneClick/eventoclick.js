@@ -8,14 +8,18 @@ botonEliminar.addEventListener("click", function() {
     this.remove();
 });
 
+var mggato = 22
 var botonEliminar = document.getElementById("mg1");
 botonEliminar.addEventListener("click", function() {
     alert("Gato Atigrado was liked");
-    this.innerText = "23 me gusta";
+    mggato++
+    this.innerText = mggato + " me gusta";
 });
 
+var mgperro = 45
 var botonEliminar = document.getElementById("mg2");
 botonEliminar.addEventListener("click", function() {
     alert("Golden Retriever was liked");
-    this.innerText = "46 me gusta";
+    mgperro++
+    this.innerText = mgperro + " me gusta";
 });
