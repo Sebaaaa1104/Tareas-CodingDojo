@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 130%;
+    width: 100%;
+    height: 30%;
+}
+
+.titulo, #ciudades, #temperatura {
+    margin: 10px;
+}
+
+#ciudades {
+    display: flex;
+    gap: 30px;
+}
+
+#ciudades button {
+    background-color: dodgerblue;
+    border: 0px;
+    height: 40px;
+    color: white;
+    font-size: 75%;
+}
+
+#buenosaires {
+    width: 110px;
+}
+
+#cdmex {
+    width: 140px;
+}
+
+#santiago {
+    width: 80px;
+}
+
+#saopablo {
+    width: 90px;
+}
+
+#quito {
+    width: 60px;
+}
+
+#temperatura {
+    font-size: 80%;
+    display: flex;
+    gap: 10px;
+}
+
+.pagina {
+    margin-top: 40px;
+    width: 70%;
+    height: 90%;
+}
+
+#ba, #cdm, #san, #sp, #qui {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_ciudad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dias {
+    display: flex;
+    margin: 30px;
+    gap: 50px;
+}
+
+.hoy, .mañana, .miercoles, .jueves, .viernes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgrey;
+    padding: 20px 20px;
+    gap: 20px;
+    width: 190px;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 5px;
+}
+
+.pnublado {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-image: url(pnublado.png);
+}
+
+.soleado {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-image: url(soleado.png);
+}
+
+.nublado {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-image: url(nublado.png);
+}
+
+.lluvia {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-image: url(lluvia.png);
+}
+
+.tormenta {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-image: url(tormenta.png);
+}
+
+.cookies {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 5%;
+    gap: 15px;
+}
+
+#coky {
+    width: 4%;
+    height: 90%;
+    background-color: gold;
+    border-radius: 5px;
+}

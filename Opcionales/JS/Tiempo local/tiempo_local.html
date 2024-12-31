@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Página de perfil</title>
+        <link rel="stylesheet" href="tiempo_local.css" />
+        <script src="tiempo_local.js" defer></script>
+    </head>
+    <body>
+        <div class="todo">
+            <div class="barra">
+                <div class="titulo">
+                    <h1>Tiempo Local</h1>
+                </div>
+                <div id="ciudades">
+                    <button id="buenosaires">Buenos Aires</button>
+                    <button id="cdmex">Ciudad de México</button>
+                    <button id="santiago">Santiago</button>
+                    <button id="saopablo">Sao Paulo</button>
+                    <button id="quito">Quito</button>
+                </div>
+                <div id="temperatura">
+                    <p>Mostrar temperatura en</p>
+                    <select>
+                        <option value="celcius">C°</option>
+                        <option value="faren">F°</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pagina">
+                <div id="ba" style="display: none">
+                    <div class="titulo_ciudad">
+                        <h1>Buenos Aires</h1>
+                    </div>
+                    <div class="dias">
+                        <div class="hoy">
+                            <div class="pnublado"></div>
+                            <h2>Hoy</h2>
+                            <p>Mayormente nublado</p>
+                            <p>Min: 21°C Max: 27°C</p>
+                        </div>
+                        <div class="mañana">
+                            <div class="pnublado"></div>
+                            <h2>Mañana</h2>
+                            <p>Mayormente nublado</p>
+                            <p>Min: 22°C Max: 29°C</p>
+                        </div>
+                        <div class="miercoles">
+                            <div class="pnublado"></div>
+                            <h2>Miércoles</h2>
+                            <p>Mayormente nublado</p>
+                            <p>Min: 21°C Max: 28°C</p>
+                        </div>
+                        <div class="jueves">
+                            <div class="soleado"></div>
+                            <h2>Jueves</h2>
+                            <p>Soleado</p>
+                            <p>Min: 19°C Max: 31°C</p>
+                        </div>
+                        <div class="viernes">
+                            <div class="soleado"></div>
+                            <h2>Viernes</h2>
+                            <p>Soleado</p>
+                            <p>Min: 19°C Max: 28°C</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="cdm" style="display: none">
+                    <div class="titulo_ciudad">
+                        <h1>Ciudad de México</h1>
+                    </div>
+                    <div class="dias">
+                        <div class="hoy">
+                            <div class="soleado"></div>
+                            <h2>Hoy</h2>
+                            <p>Soleado</p>
+                            <p>Min: 7°C Max: 23°C</p>
+                        </div>
+                        <div class="mañana">
+                            <div class="pnublado"></div>
+                            <h2>Mañana</h2>
+                            <p>Mayormente nublado</p>
+                            <p>Min: 7°C Max: 24°C</p>
+                        </div>
+                        <div class="miercoles">
+                            <div class="nublado"></div>
+                            <h2>Miércoles</h2>
+                            <p>Nublado</p>
+                            <p>Min: 7°C Max: 23°C</p>
+                        </div>
+                        <div class="jueves">
+                            <div class="pnublado"></div>
+                            <h2>Jueves</h2>
+                            <p>Mayormente nublado</p>
+                            <p>Min: 8°C Max: 23°C</p>
+                        </div>
+                        <div class="viernes">
+                            <div class="nublado"></div>
+                            <h2>Viernes</h2>
+                            <p>Nublado</p>
+                            <p>Min: 9°C Max: 20°C</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="san" style="display: none">
+                    <div class="titulo_ciudad">
+                        <h1>Santiago</h1>
+                    </div>
+                    <div class="dias">
+                        <div class="hoy">
+                            <div class="soleado"></div>
+                            <h2>Hoy</h2>
+                            <p>Soleado</p>
+                            <p>Min: 17°C Max: 29°C</p>
+                        </div>
+                        <div class="mañana">
+                            <div class="soleado"></div>
+                            <h2>Mañana</h2>
+                            <p>Soleado</p>
+                            <p>Min: 17°C Max: 30°C</p>
+                        </div>
+                        <div class="miercoles">
+                            <div class="soleado"></div>
+                            <h2>Miércoles</h2>
+                            <p>Soleado</p>
+                            <p>Min: 16°C Max: 30°C</p>
+                        </div>
+                        <div class="jueves">
+                            <div class="soleado"></div>
+                            <h2>Jueves</h2>
+                            <p>Soleado</p>
+                            <p>Min: 17°C Max: 30°C</p>
+                        </div>
+                        <div class="viernes">
+                            <div class="soleado"></div>
+                            <h2>Viernes</h2>
+                            <p>Soleado</p>
+                            <p>Min: 16°C Max: 30°C</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="sp" style="display: none">
+                    <div class="titulo_ciudad">
+                        <h1>Sao Paulo</h1>
+                    </div>
+                    <div class="dias">
+                        <div class="hoy">
+                            <div class="tormenta"></div>
+                            <h2>Hoy</h2>
+                            <p>Tormenta</p>
+                            <p>Min: 19°C Max: 26°C</p>
+                        </div>
+                        <div class="mañana">
+                            <div class="lluvia"></div>
+                            <h2>Mañana</h2>
+                            <p>Lluvia</p>
+                            <p>Min: 19°C Max: 28°C</p>
+                        </div>
+                        <div class="miercoles">
+                            <div class="tormenta"></div>
+                            <h2>Miércoles</h2>
+                            <p>Tormenta</p>
+                            <p>Min: 19°C Max: 28°C</p>
+                        </div>
+                        <div class="jueves">
+                            <div class="lluvia"></div>
+                            <h2>Jueves</h2>
+                            <p>Lluvia</p>
+                            <p>Min: 21°C Max: 29°C</p>
+                        </div>
+                        <div class="viernes">
+                            <div class="tormenta"></div>
+                            <h2>Viernes</h2>
+                            <p>Tormenta</p>
+                            <p>Min: 20°C Max: 29°C</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="qui" style="display: none">
+                    <div class="titulo_ciudad">
+                        <h1>Quito</h1>
+                    </div>
+                    <div class="dias">
+                        <div class="hoy">
+                            <div class="lluvia"></div>
+                            <h2>Hoy</h2>
+                            <p>Lluvia</p>
+                            <p>Min: 11°C Max: 14°C</p>
+                        </div>
+                        <div class="mañana">
+                            <div class="lluvia"></div>
+                            <h2>Mañana</h2>
+                            <p>Lluvia</p>
+                            <p>Min: 11°C Max: 15°C</p>
+                        </div>
+                        <div class="miercoles">
+                            <div class="lluvia"></div>
+                            <h2>Miércoles</h2>
+                            <p>Lluvia</p>
+                            <p>Min: 9°C Max: 15°C</p>
+                        </div>
+                        <div class="jueves">
+                            <div class="lluvia"></div>
+                            <h2>Jueves</h2>
+                            <p>Lluvia</p>
+                            <p>Min: 9°C Max: 17°C</p>
+                        </div>
+                        <div class="viernes">
+                            <div class="lluvia"></div>
+                            <h2>Viernes</h2>
+                            <p>Lluvia</p>
+                            <p>Min: 9°C Max: 16°C</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cookies">
+                    <p>Detente! Tiempo de cookies. Usamos cookies (tristemente, no las comestibles) para personalizar contenido y anuncios, proporcionar funciones de redes sociales y analizar nuestro tráfico. Lee más</p>
+                    <button id="coky">Acepto</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
