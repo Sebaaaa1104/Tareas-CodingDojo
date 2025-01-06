@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen fundamentos</title>
+    <link rel="stylesheet" href="fundamentos.css">
+    <script src="fundamentos.js" defer></script>
+</head>
+<body>
+    <div class="todo">
+        <div class="barra">
+            <div class="titulo_barra"> <!--Primer div horizontal (Logo e inicio de sesión)-->
+                <h1 id="titulo">Libroteca</h1>
+                <div class="foto_libroteca"></div>
+            </div>
+            <div class="botones_barra">
+                <button id="sesion">Inicio de Sesión</button>
+                <button id="registro">Registro</button>
+            </div>
+        </div>
+        <div class="opciones"> <!--Segundo div horizontal (Opciones de compra)-->
+            <div class="opcion">
+                <div class="img_opcion" id="elige"></div>
+                <h2>Elige tu libro</h2>
+            </div>
+            <div class="opcion">
+                <div class="img_opcion" id="revisa"></div>
+                <h2>Revisa disponibilidad</h2>
+            </div>
+            <div class="opcion">
+                <div class="img_opcion" id="separa"></div>
+                <h2>Sepáralo</h2>
+            </div>
+            <div class="opcion">
+                <div class="img_opcion" id="recibe"></div>
+                <h2>Recíbelo</h2>
+            </div>
+        </div>
+        <div class="generos"> <!--Tercer div horizontal (Botones de género)-->
+            <button class="botones_gen" onclick="cambiarTitulo(this)">Ficción</button>
+            <button class="botones_gen" onclick="cambiarTitulo(this)">Históricos</button>
+            <button class="botones_gen" onclick="cambiarTitulo(this)">Tecnología</button>
+            <button class="botones_gen" onclick="cambiarTitulo(this)">Autoayuda</button>
+            <button class="botones_gen" onclick="cambiarTitulo(this)">Poesía</button>
+        </div>
+        <div class="titulo_genero"> <!--Cuarto div horizontal (Titulo que cambia)-->
+            <h1 id="titulo_gen">Todos los libros</h1>
+        </div>
+        <div class="cartas"> <!--Quinto div horizontal (Cards con los libros)-->
+            <div class="card">
+                <div class="img_libro" id="img1"></div> <!--Libro 1-->
+                <div class="info_libro">
+                    <p class="titulo_libro">Cien Años de Soledad</p>
+                    <p class="autor">Gabriel García Márquez</p>
+                </div> 
+                <button id="rentar1">Rentar</button> <!--Boton de Renta que se ve-->
+                <button id="nodisponible1" style="display: none">No disponible</button> <!--Boton de No disponible que no se ve-->
+            </div>
+            <div class="card">
+                <div class="img_libro" id="img2"></div> <!--Libro 3-->
+                <div class="info_libro">
+                    <p class="titulo_libro">Rayuela</p>
+                    <p class="autor">Julio Cortázar</p>
+                </div>
+                <button id="rentar2" onclick="nodisponible(2)">Rentar</button> <!--Boton de Renta que se ve-->
+                <button id="nodisponible2" style="display: none">No disponible</button> <!--Boton de No disponible que no se ve-->
+            </div>
+            <div class="card">
+                <div class="img_libro" id="img3"></div> <!--Libro 3-->
+                <div class="info_libro">
+                    <p class="titulo_libro">Travesuras de la Niña Mala</p>
+                    <p class="autor">Mario Vargas Llosa</p>
+                </div>
+                <button id="rentar3" onclick="nodisponible(3)">Rentar</button> <!--Boton de Renta que se ve-->
+                <button id="nodisponible3" style="display: none">No disponible</button> <!--Boton de No disponible que no se ve-->
+            </div>
+        </div>
+        <div class="derechos"> <!--Sexto div horizontal (Derechos de Libroteca)-->
+            <p>Todos los derechos reservados. Libroteca</p>
+        </div>
+    </div>
+</body>
+</html>
